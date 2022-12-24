@@ -4,12 +4,13 @@
 }
 
 html {
-    background-color: azure;
+    background-color: #ffff80;
 }
 
 header {
     text-align: center;
     margin: 50px;
+    padding: 0;
 }
 
 #head {
@@ -30,12 +31,14 @@ canvas {
     border: 3px solid dodgerblue;
     background-color: lightyellow;
     text-align: center;
+    display: block;
+    float: left;
 }
 
 #game {
     position: relative;
-    width: 680px;
-    height: 340px;
+    width: 650px;
+    height: 322px;
     margin: 0 auto;
     /* display: flex; */
 }
@@ -43,16 +46,17 @@ canvas {
 #tic {
     position: relative;
     margin: 0 auto;
-    height: 326px;
-    width: 326px;
+    height: 318px;
+    width: 318px;
     display: inline-block;
     float: left;
+    border: 3px solid dodgerblue;
 }
 
 #rules {
     position: relative;
-    width: 326px;
-    height: 326px;
+    width: 318px;
+    height: 318px;
     text-align: center;
     display: inline-block;
     float: right;
@@ -70,19 +74,22 @@ h2 {
 }
 
 button {
-    margin-top: 15px;
+    margin-top: 25px; 
     width: 200px;
     height: 50px;
-    background-color: limegreen;
     font-size: 20px;
     font-weight: bold;
-    color: gold;
     font-family: cursive;
-    border: 1px solid black;
+    background-color: limegreen;
+    color: gold;
+    border: 1px solid black; 
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.7);
 }
 
 canvas:hover {
     background-color: lightblue;
+    cursor: pointer;
 }
 
 button:hover {
